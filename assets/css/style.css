@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    --primary-color: rgba(2,169,247,255);
+    --second-color: rgba(3,87,123,255);
+    --dark-color: rgba(1,49,63,255);
+}
+p, h1{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    padding: 0 55px;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo img{
+    height: 4rem;
+}
+.logo h1{
+    font-family: "Noto Serif", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-left: 8px;
+    color: var(--primary-color);
+}
+.user{
+    display: flex;
+    width: max-content;
+}
+.user img{
+    object-fit: cover;
+    margin: 0 15px 0 15px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+.user-information{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    justify-content: center;
+}
+.user-information p{
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: .8rem;;
+    font-weight: 600;
+    text-align: end;
+}
+main{
+    display: flex;
+    gap: 1rem;
+    padding: 0 45px;
+    height: 85vh;
+}
+.box{
+    border-radius: 16px;
+    box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.3);
+}
+.menu-container{
+    height: 95%;
+    width: 20%;
+}
+.menu-list{
+    padding: 20px 30px;
+    gap: 1px;
+    margin: 0;
+}
+.menu-list a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.menu-list a::after{
+    content: "";
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: 0.5s;
+}
+.menu-list a:hover:after{
+    width: 100%;
+}
+.menu-list h1{
+    font-size: .9rem;
+    margin: 0;
+}
+.menu-list li{
+    list-style: none;
+}
+.menu-content{
+    margin-bottom: 10px;
+}
+.menu-content li{
+    list-style: none;
+    margin-left: 15px;
+}
+.menu-content p{
+    margin: 0;
+    font-size: .8rem;
+    font-weight: 400;
+}
+.menu-content p::before{
+    content: "•";
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.content-container{
+    height: 95%;
+    width: 80%;
+}
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.dashboard .header{
+    background-image: linear-gradient(rgba(0, 26, 37, 0.65),rgba(0, 26, 37, 0.65),rgba(0, 26, 37, 0.65)), url("../img/saldo-dashboard.jpg");
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    height: 80%;
+}
+.dashboard .header img{
+    object-fit: cover;
+    margin: 0 15px 0 15px;
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    border: solid var(--primary-color) 3px;
+}
+
+@media screen and (max-width: 1250px){
+    .menu-container{
+        width: 28%;
+    }
+}

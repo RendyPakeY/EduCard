@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/login-style.css">
+    <link rel="icon" href="../assets/img/icon.png">
+    <title>Selamat Datang | Smart E-Card</title>
+</head>
+<body>
+    <section class="background">
+        <div id="preload"></div>
+        <div class="logo">
+            <img class="logo-img" src="../assets/img/icon.png" alt="Logo">
+            <h1>Smart E-Card</h1>
+        </div>
+        <div class="login-container">
+            <h1 class="one">Masuk</h1>
+            <form action="#">
+                <label for="username" class="two">Username</label>
+                <input name="username" class="two" type="text" required placeholder="Masukan Username Anda">
+                <label for="Password" class="three">Password</label>
+                <input name="password" class="three" type="password" required placeholder="Masukan Password Anda">
+                <a class="four" href="https://mail.google.com/mail/u/0/?fs=1&to=smart.master@gmail.com&body=Halo+Saya+ingin+memulihkan+akun+saya&tf=cm">Lupa Password ?</a>
+                <button onclick="setelahSubmit()" id="five" class="five" type="submit">Masuk sekarang</button>
+            </form>
+        </div>
+        <div class="background-content-container">
+            <div class="background-content">
+                <h1>Selamat Datang Pengguna Smart E-Card</h1>
+                <p>Kartu Pintar Berbasis IoT</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/cc079fac56.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/login-index.js"></script>
+</body>
+</html>
