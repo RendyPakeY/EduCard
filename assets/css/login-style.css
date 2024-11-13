@@ -79,10 +79,10 @@ body{
 }
 .login-container form input{
     background-color: white;
-    height: 30px;
+    height: 25px;
     width: 100%;
     margin-bottom: 5px;
-    padding: 0;
+    padding: 4px;
     border: solid black 1px;
     border-radius: 5px;
 }
