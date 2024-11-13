@@ -79,22 +79,26 @@ body{
 }
 .login-container form input{
     background-color: white;
-    height: 25px;
+    height: 30px;
     width: 100%;
     margin-bottom: 5px;
-    padding: 4px;
+    margin: 0;
+    padding: 0;
     border: solid black 1px;
     border-radius: 5px;
+}
+.login-container form input::placeholder{
+    padding: 5px;
 }
 .login-container form button{
     background-color: var(--primary-color);
     color: white;
+    /* padding: 4px; */
     height: 40px;
     width: 100%;
     margin-top: 5px;
     border-radius: 5px;
     border: solid var(--primary-color) 1px;
-    width: 100%;
 }
 .login-container h1{
     color: rgb(17, 49, 65);

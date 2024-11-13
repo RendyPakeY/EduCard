@@ -71,11 +71,13 @@ main{
     box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.3);
 }
 .menu-container{
+    display: flex;
+    justify-content: center;
     height: 95%;
     width: 20%;
 }
 .menu-list{
-    padding: 20px 30px;
+    padding: 20px 15px;
     gap: 1px;
     margin: 0;
 }
@@ -122,13 +124,16 @@ main{
     margin-right: 10px;
 }
 .content-container{
+    display: flex;
     height: 95%;
-    width: 80%;
+    width: 100%;
 }
 .dashboard{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
 }
 .dashboard .header{
     background-image: linear-gradient(rgba(0, 26, 37, 0.65),rgba(0, 26, 37, 0.65),rgba(0, 26, 37, 0.65)), url("../img/saldo-dashboard.jpg");
@@ -137,17 +142,38 @@ main{
     justify-content: space-between;
     align-items: center;
     padding: 20px 35px;
-    height: 80%;
+    height: 28%;
+}
+.dashboard .header .header-left{
+    color: white;
+    font-size: 118%;
 }
 .dashboard .header img{
     object-fit: cover;
     margin: 0 15px 0 15px;
-    height: 165px;
-    width: 165px;
+    height: 125px;
+    width: 125px;
     border-radius: 50%;
     border: solid var(--primary-color) 3px;
 }
-
+.dashboard .main{
+    display: flex;
+    gap: 20px;
+    height: 60%;
+    width: 100%;
+}
+.dashboard .main *{
+    margin: 0;
+    padding: 0;
+}
+.dashboard .main .main-left, .dashboard .main .main-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    margin: 0;
+}
 @media screen and (max-width: 1250px){
     .menu-container{
         width: 28%;
