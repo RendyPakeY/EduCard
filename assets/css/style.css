@@ -30,10 +30,9 @@ nav{
     height: 4rem;
 }
 .logo h1{
-    font-family: "Noto Serif", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-left: 8px;
-    color: var(--primary-color);
+    color: rgb(65, 178, 225);
 }
 .user{
     display: flex;
@@ -174,6 +173,15 @@ main{
     padding: 20px 30px;
     margin: 0;
 }
+.dashboard .main .main-left h2{
+    text-align: center;
+}
+.dashboard .main .bottom{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
 @media screen and (max-width: 1250px){
     .menu-container{
         width: 28%;
