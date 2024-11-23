@@ -115,7 +115,7 @@ main{
 }
 .menu-content p{
     margin: 0;
-    font-size: .85rem;
+    font-size: .9rem;
     font-weight: 400;
 }
 .menu-content p::before{
@@ -150,7 +150,6 @@ main{
 }
 .dashboard .header img{
     object-fit: cover;
-    margin: 0 15px 0 15px;
     height: 125px;
     width: 125px;
     border-radius: 50%;
@@ -176,8 +175,14 @@ main{
 }
 .dashboard .main .main-left h1, .dashboard .main .main-right h1{
     font-size: 1.7rem;
+    line-height: 2rem;
     font-weight: 650;
     text-align: center;
+}
+.dashboard .main .main-left h2{
+    text-align: center;
+    /* font-size: 1.7rem; */
+    font-weight: 500;
 }
 .dashboard .main .main-left{
     display: flex;
@@ -204,9 +209,62 @@ main{
 .dashboard .main .main-left .bottom .riwayat li{
     list-style: none;
 }
+.dashboard .main .main-right{
+    display: flex;
+    gap: 5%;
+}
+.dashboard .main .main-right .bottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+}
+.dashboard .main .main-right .bottom p{
+    font-weight: 600;
+}
+.dashboard .main .main-right .bottom .riwayat{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dashboard .main .main-right .bottom .riwayat .harga{
+    font-weight: 500;
+    color: red;
+}
+.dashboard .main .main-right .bottom .riwayat li{
+    list-style: none;
+}
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1028px){
+    main{
+        padding: 0 25px;
+    }
     .menu-container{
-        width: 28%;
+        padding-left: 5px;
+    }
+    .menu-content li{
+        margin-left: 8px;
+    }
+    .menu-content p{
+        font-size: .8rem;
+    }    
+    .dashboard h1{
+        font-size: 140%;
+    }
+    .dashboard .main .main-right h1, .dashboard .main .main-left h1{
+        line-height: 1.8rem;
+        font-size: 150%;
+    }
+    .dashboard .main .main-left h2{
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    .dashboard .main .main-left p, .dashboard .main .main-left .riwayat, .dashboard .main .main-left .harga, .dashboard .main .main-right p, .dashboard .main .main-right .riwayat, .dashboard .main .main-right .harga{
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 890px){
+    .menu-container{
+        display: none;
     }
 }
