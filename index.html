@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda | Smart E-Card</title>
+    <title>Beranda | Edu-Card</title>
     <link rel="icon" href="assets/img/icon.png">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -70,6 +70,22 @@
                         </div>
                         <div class="bottom">
                             <p>Riwayat Transaksi:</p>
+                            <div class="riwayat">
+                                <!-- Mainkan database disini -->
+                                <!-- yang satu ini sebagai hard code -->
+                                <ul class="barang">
+                                    <li>Anda Membeli Onigiri</li>
+                                    <li>Anda Membeli Onigiri</li>
+                                    <li>Anda Membeli Onigiri</li>
+                                    <li>Anda Membeli Onigiri</li>
+                                </ul>
+                                <ul class="harga">
+                                    <li>Rp 8.000</li>
+                                    <li>Rp 8.000</li>
+                                    <li>Rp 8.000</li>
+                                    <li>Rp 8.000</li>
+                                </ul>
+                            </div>
                             <div class="left">
 
                             </div>
@@ -85,5 +101,21 @@
             </div>
         </section>
     </main>
+    <script>
+        var bilangan = 8000;
+	
+    var	number_string = bilangan.toString(),
+        sisa 	= number_string.length % 3,
+        rupiah 	= number_string.substr(0, sisa),
+        ribuan 	= number_string.substr(sisa).match(/\d{3}/g);
+            
+    if (ribuan) {
+        separator = sisa ? '.' : '';
+        rupiah += separator + ribuan.join('.');
+    }
+    
+    // Cetak hasil
+    console.log("-Rp "+rupiah); // Hasil: 23.456.789
+    </script>
 </body>
 </html>
