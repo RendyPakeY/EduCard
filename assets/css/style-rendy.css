@@ -506,7 +506,187 @@ main{
     background-color: white;
     color: var(--primary-color);
 }
-
+/* form pengembalian end */
+/* daftar pinjaman */
+.daftar-pinjaman{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.daftar-pinjaman .daftar-pinjaman-value{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 45px 25px 25px 25px;
+    width: 100%;
+}
+.daftar-pinjaman .daftar-pinjaman-value .table{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    align-items: center;
+}
+.daftar-pinjaman .daftar-pinjaman-value .table table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+.daftar-pinjaman .daftar-pinjaman-value .table table thead{
+    background-color: var(--primary-color);
+    color: white;
+}
+.daftar-pinjaman .daftar-pinjaman-value .table table tbody tr:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+.daftar-pinjaman .daftar-pinjaman-value .table table thead tr th, .daftar-pinjaman .daftar-pinjaman-value .table table tbody tr td{
+    padding: 8px 8px;
+}
+.daftar-pinjaman .daftar-pinjaman-value .submit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+/* daftar pinjaman end */
+/* kontrol kelas */
+.kontrol{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.kontrol .kontrol-value{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 45px 25px 25px 25px;
+    width: 100%;
+}
+.kontrol .kontrol-value .table{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    align-items: center;
+}
+.kontrol .kontrol-value .table table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+.kontrol .kontrol-value .table table thead{
+    background-color: var(--primary-color);
+    color: white;
+}
+.kontrol .kontrol-value .table table tbody tr:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+.kontrol .kontrol-value .table table thead tr th, .kontrol .kontrol-value .table table tbody tr td{
+    padding: 4px 8px;
+    height: 35px;
+}
+.kontrol .kontrol-value .submit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+.check{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.off{
+    height: 30px;
+    width: 65px;
+    border-radius: 80px;
+    background-color: rgb(241, 241, 241);
+    transition: ease-in-out .3s;
+}
+.off::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    transform: translateX(-50%);
+    right: 17.5%;
+    margin-top: 4px;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    transition: ease-in-out .3s;
+}
+.on{
+    height: 30px;
+    width: 65px;
+    border-radius: 80px;
+    background-color: var(--primary-color);
+    transition: ease-in-out .3s;
+}
+.on::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    transform: translateX(-50%);
+    right: 14.3%;
+    margin-top: 4px;
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    transition: ease-in-out .3s;
+}
+/* kontrol end */
+/* form keuangan */
+.form-keuangan{
+    width: 100%;
+    height: 100%;
+    padding: 25px 50px;
+} 
+.form-keuangan .form-keuangan-value{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+}
+.form-keuangan .form-keuangan-value .left, .form-keuangan .form-keuangan-value .right{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    height: 90%;
+}
+.form-keuangan .form-keuangan-value .left img, .form-keuangan .form-keuangan-value .right img{
+    height: 50%;
+    width: 100%;
+}
+.form-keuangan .form-keuangan-value .value .jumlah{
+    display: flex;
+    gap: 20px;
+}
+.form-keuangan .form-keuangan-value .value{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+    font-weight: 500;
+}
+.form-keuangan .form-keuangan-value input{
+    width: 80%;
+    font-weight: 500;
+}
+.form-keuangan .form-keuangan-value .konfirmasi{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 20px;
+    height: 100%;
+    width: 80%;
+}
 @media screen and (max-width: 1028px){
     nav{
         padding: 0 40px;
@@ -664,7 +844,7 @@ main{
     }
     .tentang .tentang-value .main .person-box{
         width: 50%;
-        height: 50vh;
+        height: 200px;
     }
     .tentang .tentang-value .main .person-1, .tentang .tentang-value .main .person-2{
         flex: 40%;
