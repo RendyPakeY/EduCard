@@ -352,25 +352,161 @@ main{
     font-size: 90%;
 }
 /* =========Tentang end========== */
-/* ========daftar produk========= */
-.daftar-produk{
+/* ========form pembelian========= */
+.form-pembelian{
     display: flex;
     justify-content: center;
     height: 100%;
     width: 100%;
 }
-.daftar-produk .daftar-produk-value{
-    width: fit-content;
-    height: fit-content;
+.form-pembelian .form-pembelian-value{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 45px 25px 25px 25px;
+    width: 100%;
 }
-.daftar-produk .daftar-produk-value table tr th{
+.form-pembelian .form-pembelian-value .table{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    align-items: center;
+}
+.form-pembelian .form-pembelian-value .table table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+.form-pembelian .form-pembelian-value .table table thead{
     background-color: var(--primary-color);
-    /* border-collapse: collapse; */
-    width: 50%;
-    margin: 0;
-    border: 5px solid var(--primary-color);
     color: white;
 }
+.form-pembelian .form-pembelian-value .table table tbody tr:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+.form-pembelian .form-pembelian-value .table table thead tr th, .form-pembelian .form-pembelian-value .table table tbody tr td{
+    padding: 8px 8px;
+}
+.form-pembelian .form-pembelian-value .submit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+.blue-btn{
+    border: solid var(--primary-color) 2px;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+    transition: ease 0.3s;
+}
+.blue-btn:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+/* form pembelian end */
+/* form peminjaman */
+.form-peminjaman{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.form-peminjaman .form-peminjaman-value{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 45px 25px 25px 25px;
+    width: 100%;
+}
+.form-peminjaman .form-peminjaman-value .table{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    align-items: center;
+}
+.form-peminjaman .form-peminjaman-value .table table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+.form-peminjaman .form-peminjaman-value .table table thead{
+    background-color: var(--primary-color);
+    color: white;
+}
+.form-peminjaman .form-peminjaman-value .table table tbody tr:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+.form-peminjaman .form-peminjaman-value .table table thead tr th, .form-peminjaman .form-peminjaman-value .table table tbody tr td{
+    padding: 8px 8px;
+}
+.form-peminjaman .form-peminjaman-value .submit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+/* peminjaman end */
+/* pengembalian */
+.form-pengembalian{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.form-pengembalian .form-pengembalian-value{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 45px 25px 25px 25px;
+    width: 100%;
+}
+.form-pengembalian .form-pengembalian-value .table{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    align-items: center;
+}
+.form-pengembalian .form-pengembalian-value .table table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+.form-pengembalian .form-pengembalian-value .table table thead{
+    background-color: var(--primary-color);
+    color: white;
+}
+.form-pengembalian .form-pengembalian-value .table table tbody tr:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+.form-pengembalian .form-pengembalian-value .table table thead tr th, .form-pengembalian .form-pengembalian-value .table table tbody tr td{
+    padding: 8px 8px;
+}
+.form-pengembalian .form-pengembalian-value .submit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+.blue-btn{
+    border: solid var(--primary-color) 2px;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+    transition: ease 0.3s;
+}
+.blue-btn:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+
 @media screen and (max-width: 1028px){
     nav{
         padding: 0 40px;
