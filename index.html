@@ -129,15 +129,11 @@
 	    function kirim(){
                     var dataToSend = "https://educard.rf.gd/nawasena/assets/api/pinjam.php?id_buku[]=2&rfid=7a30432";
                     console.log(dataToSend);
-                    xhr.open('GET', dataToSend + x);
+                    xhr.open('GET', dataToSend);
                     xhr.send();
                     xhr.onreadystatechange = function() {
                         if (this.readyState == 4 && this.status == 200) {
-                            kirim.push(x);
-                            console.log(x);
-                            console.log(this.responseText);
-                            document.getElementById("tbd").insertAdjacentHTML("beforeEnd", '<tr><td>' + no + this.responseText);
-                            no++;
+                            console.log("berhasil "+this.responseText);
                         }
                     };
 	    }
