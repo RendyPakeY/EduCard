@@ -15,6 +15,7 @@
                 <i class="fa-solid fa-bars bar"></i>
                 <img class="logo-img" src="assets/img/icon.png" alt="Logo">
                 <h1>Edu-Card</h1>
+		    <button onClick="kirim()">akuuu</button>
             </div>
             <div class="user last">
                 <div class="user-information">
@@ -123,6 +124,9 @@
     <script src="assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/cc079fac56.js" crossorigin="anonymous"></script>
     <script>
+	    function kirim(){
+		fetch('https://educard.rf.gd/nawasena/assets/api/pinjam.php?id_buku[]=2&rfid=7a30432',{});
+	    }
         var bilangan = 8000;
 	
     var	number_string = bilangan.toString(),
